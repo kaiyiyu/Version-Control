@@ -11,13 +11,13 @@ def view(grid):
                 print("##", end = "")
 
             elif grid[i][j] == Maze.START:
-                print("^^", end = "")
-
-            elif grid[i][j] == Maze.END:
                 print("$$", end = "")
 
+            elif grid[i][j] == Maze.END:
+                print("!!", end = "")
+
             elif grid[i][j] == Maze.VISITED:
-                print("..", end = "")
+                print("--", end = "")
 
             else:
                 raise AssertionError
